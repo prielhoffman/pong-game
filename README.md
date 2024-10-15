@@ -30,3 +30,23 @@ cd pong-game
 ```bash
 python main.py
 ```
+
+## Game Controls
+* **Right Paddle** (controlled by the first player):
+     Move up: **`Up Arrow`**
+     Move down: **`Down Arrow`**
+* **Left Paddle** (controlled by the second player):
+     Move up: **`w`**
+     Move down: **`s`**
+
+## Project Structure
+* **`main.py`** - Main game loop and logic.
+* **`paddle.py`** - Class to control the ball movement and logic.
+* **`scoreboard.py`** - Class for displaying and updating the scoreboard.
+* **`ball.py`** - Class to control the ball movement and logic.
+
+## How it Works
+1. **Paddle Movement:** Each player controls a paddle on their side of the screen. Players can move their paddle up or down using their respective keys.
+2. **Ball Movement:** The ball starts at the center of the screen and moves in a diagonal direction. It bounces off the top and bottom walls. When it collides with a paddle, it bounces back towards the other player.
+3. **Scoring:** If a player misses the ball, the opponent scores a point. The game continues with the ball being reset to the center after each point.
+  
